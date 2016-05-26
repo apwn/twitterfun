@@ -8,6 +8,16 @@
 </head>
 <body>
 
+<div id="top-menu">
+  <img src="https://greatrednorth.files.wordpress.com/2011/06/twatter_logo_sticker-p2179701256406.jpg" alt="">
+  <h1>Welcome to Twatter</h1>
+  <% if @current_user %>
+  <div class="user-info">
+    <p>Welcome <%= @current_user.name %></p>
+    <a href="/logout"><button type="button" name="button">Logout</button></a>
+  </div>
+  <% end %>
+</div>
 <%= yield %>
 
 </body>

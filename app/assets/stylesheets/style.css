@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: none;
+}
+
+#top-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+}
+
+#top-menu img {
+  width: 7%;
+  padding-left: 40px;
+}
+
+#top-menu p {
+  padding-right: 40px;
+}

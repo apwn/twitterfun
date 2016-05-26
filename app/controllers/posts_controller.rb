@@ -3,6 +3,10 @@ class PostsController < ApplicationController
   # Before running anything in this controller, check the dude is logged in
   before_filter :authorize
 
+  # redirects to home
+  def home
+    @users = User.all
+  end
   # GET /posts
   # GET /posts.json
   def index
